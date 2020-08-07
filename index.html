@@ -16,10 +16,11 @@
         .forms{
             background-color: #141311;
             display: inline-block;
-            height: 30rem;
-            width: 25rem;
+            height: 45rem;
+            width: 30rem;
             border-style:  solid;
             border-color: orangered;
+            margin-bottom: 10rem;
         }
         label{
             color: #93cddd;
@@ -71,7 +72,12 @@
                 
                 <div class="element">
                     <label for="Cno">Phone No :</label>
-                    <input type="numer" name="Cno" id="cno" placeholder="Phone No" required>
+                    <input type="number" name="Cno" id="cno" placeholder="Phone No" required>
+                </div>
+                
+                <div class="element">
+                    <label for="dob">Enter Date of Birth :</label>
+                    <input type="date" name="dob" id="dob" required>
                 </div>
                 <div class="element">
                     <label for="gender">Select Gender :</label>
@@ -83,7 +89,21 @@
                     <label for="email">Email Id :</label>
                     <input type="email" name="email" id="email" required>
                 </div>
-               <input type="submit" class="but" onclick="calljs()" value="Submit"> 
+                <div class="element">
+                    <label for="Address">Address :</label>
+                    <input style = "height: 3.75rem;"type="textarea" name="Address" id="addr" required>
+                </div>
+                
+                <div class="element">
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+               
+                <div class="element">
+                    <label for="password">Confirm Password :</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <input type="submit" class="but" onclick="calljs()" value="Submit"> 
             </form>
         </div>
     </body>
