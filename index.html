@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        h1{
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            color: #ffc000;
+        }
+        .forms{
+            background-color: #141311;
+            display: inline-block;
+            height: 30rem;
+            width: 25rem;
+            border-style:  solid;
+            border-color: orangered;
+        }
+        label{
+            color: #93cddd;
+        }
+        form{
+            margin-top: 5rem;
+        }
+        .element{
+            margin-top: 2.5rem;
+        }
+        .but{
+            margin-top: 4.5rem;
+            background-color: orangered;
+            color: ;   
+            font-size: 15px;
+            font-family:Arial, Helvetica, sans-serif; 
+            color: #93cddd;
+            font-weight: bold;
+            border: 1px solid #e7e7e7;
+            width: 5rem;
+            height: 2rem;
+            border-radius: 8px;
+            }
+    
+        
+        
+    </style>
+    </head>
+    <body>
+        <script>
+            function calljs()
+            {
+                var name = document.getElementById("fname").value;
+                alert("Hello "+name+", Your Details are successfully Registered")
+                
+            }
+            </script>
+        <h1>Registration form</h1>
+        <div class="forms">
+            <form>
+                <div class="element">
+                    <label for="Fname">First Name :</label>
+                    <input type="text"  name="Fname" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="element">
+                    <label for="Lname">Last Name :</label>
+                    <input type="text" name="Lname" id="lname" placeholder="Last Name" required>
+                </div>
+                
+                <div class="element">
+                    <label for="Cno">Phone No :</label>
+                    <input type="numer" name="Cno" id="cno" placeholder="Phone No" required>
+                </div>
+                <div class="element">
+                    <label for="gender">Select Gender :</label>
+                    <label for="gender"><input type="radio" name="gender" value="Male" id="Male">Male</label>
+                    <label for="gender"><input type="radio" name="gender" value="Female" id="Female">Female</label>
+                    <label for="gender"><input type="radio" name="gender" value="Other" id="Other">Other</label>
+                </div>
+                <div class="element">
+                    <label for="email">Email Id :</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+               <input type="submit" class="but" onclick="calljs()" value="Submit"> 
+            </form>
+        </div>
+    </body>
+    <footer>
+        <hr>
+	<code>Copyright (c) 2020 Pratik Patil</code>
+	</footer>
+</html>
